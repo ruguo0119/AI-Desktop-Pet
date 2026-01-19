@@ -221,14 +221,14 @@ aigirl/
 
 | 包名 | 版本 | 用途 |
 |------|------|------|
-| fastapi | ≥0.104.0 | 异步 Web 框架 |
+| fastapi | ≥0.104.1 | 异步 Web 框架 |
 | uvicorn | ≥0.24.0 | ASGI 服务器 |
-| openai | ≥1.0.0 | LLM/TTS/STT API 客户端 |
-| chromadb | ≥0.4.0 | 向量数据库 |
+| openai | ≥1.3.8| LLM/TTS/STT API 客户端 |
+| chromadb | ≥0.4.14 | 向量数据库 |
 | python-dotenv | ≥1.0.0 | 环境变量管理 |
-| pillow | ≥10.0.0 | 图像处理（截图压缩） |
-| pyautogui | ≥0.9.50 | 屏幕截图 |
-
+| pillow | ≥10.1.0 | 图像处理（截图压缩） |
+| pyautogui | ≥0.9.53 | 屏幕截图 |
+| tiktoken |≥0.5.2|Token 计算 (用于记忆管理)|
 ### 前端依赖（Node.js）
 
 详见 `frontend/package.json`，主要包括：
