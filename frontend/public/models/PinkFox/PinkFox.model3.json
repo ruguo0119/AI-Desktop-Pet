@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "PinkFox.moc3",
+		"Textures": [
+			"PinkFox.8192/texture_00.png"
+		],
+		"Physics": "PinkFox.physics3.json",
+		"DisplayInfo": "PinkFox.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}
