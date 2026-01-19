@@ -95,7 +95,7 @@ npm run dev
 #### 步骤 3：构建 Electron 应用
 
 ```bash
-npm run build      # 打包前端资源
+
 npm run electron   # 启动 Electron 窗口
 ```
 
