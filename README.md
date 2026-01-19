@@ -80,7 +80,7 @@ python main.py
 后端将在 `ws://localhost:8000/ws` 启动 WebSocket 服务。
 
 ### 3️⃣ 前端环境配置
-
+(npm需要先按章node.js)
 #### 步骤 1：安装依赖
 
 ```bash
