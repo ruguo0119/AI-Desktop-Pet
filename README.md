@@ -102,7 +102,7 @@ npm run electron   # 启动 Electron 窗口
 ## 📂 项目结构
 
 ```
-realgirl/
+aigirl/
 ├── backend/                    # Python 后端服务
 │   ├── main.py                # WebSocket 服务入口，状态机核心
 │   ├── services.py            # AI 能力封装（LLM、TTS、STT）
