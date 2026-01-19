@@ -1,28 +1,21 @@
-# Web Framework & Server (推荐使用 standard 版本以支持 WebSocket)
-fastapi==0.104.1
-uvicorn[standard]==0.24.0  # 修改：增加 [standard] 支持 WebSocket 依赖
 
-# OpenAI API (LLM, TTS, STT)
-openai==1.3.8
+fastapi>=0.104.1
 
-# Vector Database (Memory)
-chromadb==0.4.14
 
-# Environment Variables
-python-dotenv==1.0.0
+uvicorn[standard]>=0.24.0
 
-# Image Processing
-pillow==10.1.0
 
-# Screen Capture & Control
-pyautogui==0.9.53
-# opencv-python==4.8.1.78  # 可选：如果你在 pyautogui 中使用了 confidence 参数（图像识别精度），则必须安装此库
+openai>=1.3.8
 
-# Async Client
-httpx==0.25.2
 
-# Token Counting (强烈建议：用于管理记忆上下文长度)
-tiktoken==0.5.2
+chromadb>=0.4.14
 
-# Multipart (FastAPI 处理文件上传/表单常用)
-python-multipart==0.0.6
+
+python-dotenv>=1.0.0
+tiktoken>=0.5.2
+httpx>=0.25.2
+python-multipart>=0.0.6
+
+
+pillow>=10.1.0
+pyautogui>=0.9.53
