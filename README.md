@@ -1,17 +1,17 @@
-# 🎮 RealGirl - AI 桌宠项目
+# 🎮 一个简单的AI 桌宠项目
 
 一个可爱毒舌的 AI 桌宠（Neuro），集成 Live2D 3D 模型、语音交互、向量记忆系统。使用现代化前后端技术栈，提供流畅的实时对话体验。
 
 ## ✨ 项目特性
 
-- 🤖 **多 AI 模型集成**：Gemini/DeepSeek LLM + CosyVoice TTS + SenseVoice STT
+- 🤖 **多 AI 模型集成**：Gemini/deepseek LLM + CosyVoice TTS + SenseVoice STT
 - 🎨 **Live2D 3D 模型**：支持多个预制角色（Haru/Hiyori/PinkFox），实时表情/动作同步
-- 💾 **向量记忆系统**：ChromaDB 长期记忆 + JSON 事实库，AI 能持久化学习用户信息
-- 🎙️ **实时语音交互**：麦克风输入识别 + 文字转语音输出
-- 🔄 **WebSocket 双向通信**：前后端实时同步，支持主动发言
+- 💾 **向量记忆系统**：ChromaDB 长期记忆 + JSON 事实库，AI 能持久化学习用户信息(记忆都带时间戳)
+- 🎙️ **实时语音交互**：麦克风输入识别 + 文字转语音输出(长按F2可以用快捷键启用语音输入)
+- 🔄 **WebSocket 双向通信**：前后端实时同步，支持主动发言(和打断操作)
 - 🪟 **跨平台桌面应用**：Electron + React，支持 Windows/macOS/Linux
 - 📊 **状态机设计**：完整的对话状态管理（Idle/Thinking/Speaking）
-
+- 👀 **视觉感知系统**:输入内容含有“看看”等关键词，可以给AI桌宠传入当前电脑屏幕的截屏照片
 ## 📋 系统要求
 
 ### 后端
@@ -46,15 +46,15 @@ pip install -r requirements.txt
 
 ```env
 # LLM 主脑 (Gemini 或其他兼容 OpenAI 格式的模型)
-LLM_BASE_URL="https://api.n1n.ai/v1"
+LLM_BASE_URL="https://api.n1n.ai/v1"(这是一个中转站，可以自由改用别的支持Openai格式的中转站)
 LLM_API_KEY="your-api-key-here"
-LLM_MODEL="gemini-3-pro-preview"
+LLM_MODEL="gemini-3-pro-preview" (选用gemini是基于其多模态，可以传入图片；如果改用别的模型，比如deepseek纯文字模型，那么就不支持视觉传入图片)
 
-# 意图识别 (DeepSeek - 判断是否无聊/打断)
+# 意图识别 (DeepSeek - 判断是否无聊/打断)(已经废弃)
 PROFILE_LLM_KEY="your-deepseek-key"
 PROFILE_LLM_BASE="https://api.deepseek.com"
 
-# 语音服务 (SiliconFlow - TTS & STT)
+# 语音服务 (SiliconFlow - TTS & STT) 
 SILICON_API_KEY="your-siliconflow-key"
 SILICON_BASE_URL="https://api.siliconflow.cn/v1"
 TTS_MODEL="FunAudioLLM/CosyVoice2-0.5B"
@@ -270,14 +270,11 @@ python -c "from services import AIService"
 
 欢迎提交 Issue 和 Pull Request！
 
-## 📄 许可证
-
-MIT License
 
 ## 📞 支持
 
 如有问题，请提交 Issue 或联系开发者。
-
+由于作者能力有限，前端部分主要由AI完成，有不足之处请多指教
 ---
 
 **最后更新**：2026年1月
