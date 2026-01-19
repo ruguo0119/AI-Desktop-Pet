@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 #### 步骤 2：配置环境变量
 
-在 `backend/.env` 文件中填入 API 密钥（已提供示例）：
+在 `backend/.env` 文件中填入 API 密钥（已提供示例，如果没有请自行创建并复制下面的代码）：
 
 ```env
 # LLM 主脑 (Gemini 或其他兼容 OpenAI 格式的模型)
