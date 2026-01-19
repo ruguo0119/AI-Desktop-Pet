@@ -30,7 +30,7 @@
 
 ```bash
 git clone <repository-url>
-cd realgirl
+cd AI-Desktop-Pet
 ```
 
 ### 2️⃣ 后端环境配置
@@ -39,6 +39,10 @@ cd realgirl
 
 ```bash
 cd backend
+# 建议创建虚拟环境
+# python -m venv venv
+# source venv/bin/activate (Linux/Mac) 或 venv\Scripts\activate (Windows)
+
 pip install -r requirements.txt
 ```
 
