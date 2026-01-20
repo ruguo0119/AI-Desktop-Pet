@@ -9,7 +9,7 @@
 - 🤖 **多 AI 模型集成**：Gemini/deepseek LLM + CosyVoice TTS + SenseVoice STT
 - 🎨 **Live2D 3D 模型**：支持多个预制角色（Haru/Hiyori/PinkFox），实时表情/动作同步
 - 💾 **向量记忆系统**：ChromaDB 长期记忆 + JSON 事实库，AI 能持久化学习用户信息(记忆都带时间戳)
-- 🎙️ **实时语音交互**：麦克风输入识别 + 文字转语音输出(长按F2可以用快捷键启用语音输入)
+- 🎙️ **实时语音交互**：麦克风输入识别 + 文字转语音输出(长按F2可以用快捷键启用语音输入) 你可以让她闭嘴(AI会自行判定），进入静默模式（AI将不会主动说话)
 - 🔄 **WebSocket 双向通信**：前后端实时同步，支持主动发言(和打断操作)
 - 🪟 **跨平台桌面应用**：Electron + React，支持 Windows/macOS/Linux
 - 📊 **状态机设计**：完整的对话状态管理（Idle/Thinking/Speaking）
