@@ -1,6 +1,6 @@
 # 🎮 一个简单的AI 桌宠项目
 
-一个可爱毒舌的 AI 桌宠（Neuro），集成 Live2D 3D 模型、语音交互、向量记忆系统。使用现代化前后端技术栈，提供流畅的实时对话体验。
+一个可爱毒舌的 AI 桌宠（inspired by Neuro），集成 Live2D模型、语音交互、向量记忆系统。使用现代化前后端技术栈，提供流畅的实时对话体验。
 
 <img width="867" height="1137" alt="d3d16fee29634e14e8984d2232188c81" src="https://github.com/user-attachments/assets/7d10e448-8824-43a4-8be7-e772d6dd7747" />
 
