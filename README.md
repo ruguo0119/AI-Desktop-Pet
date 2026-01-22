@@ -39,7 +39,7 @@ cd AI-Desktop-Pet
 
 ```bash
 cd backend
-# 建议创建虚拟环境
+# 建议创建虚拟环境，请确保python版本为3.13
 # python -m venv venv
 # source venv/bin/activate (Linux/Mac) 或 venv\Scripts\activate (Windows)
 
